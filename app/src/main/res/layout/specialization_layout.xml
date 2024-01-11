@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardMaxElevation="0dp">
+
+    <TextView
+        android:id="@+id/sp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Eye Specialist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/raleway_bold"
+        android:layout_margin="@dimen/_10sdp"/>
+
+</androidx.cardview.widget.CardView>

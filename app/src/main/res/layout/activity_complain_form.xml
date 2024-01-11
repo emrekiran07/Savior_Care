@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ComplainForm">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/lgoin_shape" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Complaint Form"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_8sdp"
+        app:cardMaxElevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_20sdp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                app:civ_border_color="@color/text_color1"
+                app:civ_border_width="@dimen/_1sdp"
+                android:src="@drawable/ph"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/picture"/>
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_toEndOf="@id/picture"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+            <EditText
+                android:id="@+id/blood_group"
+                android:layout_below="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group"
+                android:layout_toEndOf="@+id/picture"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPersonName"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+            <EditText
+                android:id="@+id/cnic"
+                android:layout_below="@+id/blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CNIC"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+            <EditText
+                android:id="@+id/phone"
+                android:layout_below="@+id/cnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:inputType="phone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+            <EditText
+                android:id="@+id/address"
+                android:layout_below="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:inputType="textPostalAddress"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+            <EditText
+                android:id="@+id/complain"
+                android:layout_below="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complain"
+                android:background="@drawable/edit_text_shape"
+                android:padding="@dimen/_10sdp"
+                android:gravity="top|left"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLength="1000"
+                android:maxLines="8"
+                android:minLines="4"
+                android:scrollbars="vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/hint_color"
+                android:fontFamily="@font/raleway_medium" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Submit Complaint"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/btn_bg"
+                android:layout_below="@id/complain"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_35sdp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+</ScrollView>

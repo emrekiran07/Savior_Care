@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "993524591987",
+    "firebase_url": "https://phc-app-37258.firebaseio.com",
+    "project_id": "phc-app-37258",
+    "storage_bucket": "phc-app-37258.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993524591987:android:739d760684905e547c2906",
+        "android_client_info": {
+          "package_name": "com.phc.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993524591987-0b2sedcgledrqg9rro17h2de1kk48beu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwIFjvXf25dmgwx0yNeBpo1egUS0UERK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993524591987-0b2sedcgledrqg9rro17h2de1kk48beu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

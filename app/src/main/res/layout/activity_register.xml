@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    tools:context=".Activities.Register">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Sign up with Savior Care"
+        android:textAlignment="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/register_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_below="@+id/welcome"
+        android:text="Register as"
+        android:textAlignment="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/_10ssp" />
+    <LinearLayout
+        android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/register_as"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:background="@drawable/purple_border_transparent_bg"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/patient_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/left_corner_round_purple">
+
+            <TextView
+                android:id="@+id/patient_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_below="@+id/t1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="@string/patient"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doctor_l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/doctor_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_below="@+id/t1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="@string/doctor"
+                android:textAlignment="center"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toggle"
+        />
+
+
+</RelativeLayout>

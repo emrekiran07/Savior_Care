@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/lgoin_shape"
+            />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Sign in to Savior Care"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/lav_actionBar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_below="@+id/welcome"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_fileName="login.json"-->
+<!--            app:lottie_loop="true" />-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:elevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardMaxElevation="@dimen/_10sdp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit_emaillayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:background="@drawable/edit_text_shape"
+                    android:baselineAligned="true"
+                    android:textColorHint="@color/hint_color"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="#ECECEC"
+                        android:drawableEnd="@drawable/ic_mail"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_11sdp"
+                        android:paddingEnd="@dimen/_11sdp"
+                        android:paddingBottom="@dimen/_11sdp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/text_color1"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_11ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edit_passwordlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_shape"
+                    android:baselineAligned="true"
+                    android:textColorHint="@color/hint_color"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_emaillayout"
+                    app:passwordToggleContentDescription="@string/login_password"
+                    app:passwordToggleDrawable="@drawable/asl_password_visibility"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="#ECECEC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="#ECECEC"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/raleway_medium"
+                        android:hint="@string/login_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_11sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/text_color1"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/_11ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in as Doctor"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/text_color3"
+                    android:id="@+id/checkbox"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:textSize="@dimen/_10ssp"/>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:text="Sign In"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:autoLink="web"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Do not have an account?"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/text_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_toEndOf="@id/experience"
+                android:autoLink="web"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Register Now"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
